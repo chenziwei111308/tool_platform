@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>充放电系统开发室数字化智能化工具入口</title>
+    <style>
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+        body {
+            background: linear-gradient(120deg, #f0f7ff, #e6f2ff);
+            font-family: "微软雅黑", "PingFang SC", sans-serif;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        .main-header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0066CC;
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-shadow: 0 2px 8px rgba(0,102,204,0.15);
+        }
+        .section-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .function-section {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 8px 25px rgba(0,102,204,0.06);
+            border: 1px solid #e8f4ff;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #0066CC;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-left: 10px;
+            border-left: 4px solid #0099FF;
+        }
+        .section-title i {
+            font-size: 22px;
+        }
+        .card-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: flex-start;
+        }
+        .app-card {
+            width: 185px;
+            height: 195px;
+            background: linear-gradient(180deg, #ffffff, #f8fcff);
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0,102,204,0.08), 0 2px 8px rgba(0,0,0,0.05);
+            text-align: center;
+            padding: 25px 10px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: 1px solid #e8f4ff;
+            flex-shrink: 0;
+        }
+        .app-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,102,204,0.15), 0 4px 12px rgba(0,0,0,0.08);
+            border-color: #0099FF;
+        }
+        .app-icon {
+            width: 68px;
+            height: 68px;
+            margin: 0 auto 18px;
+            display: block;
+            object-fit: contain;
+            filter: drop-shadow(0 3px 6px rgba(0,102,204,0.1));
+        }
+        .app-name {
+            font-size: 15px;
+            color: #336699;
+            font-weight: 600;
+            line-height: 1.4;
+            word-wrap: break-word;
+            padding: 0 5px;
+        }
+        @media (max-width: 1024px) {
+            .card-wrapper {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-header">充放电系统开发室数字化智能化工具入口</div>
+
+    <div class="section-container">
+        <!-- ✅ 第一区：AI智能体功能专区 -->
+        <div class="function-section">
+            <div class="section-title"><i>🧠</i> AI智能体功能专区</div>
+            <div class="card-wrapper">
+                
+                <div class="app-card" onclick="window.open('http://10.124.8.54:30009/agent/dialog/#/store/dialog/detail?id=xzrbgent1ko98g4f7kmssn4rxnzxx15r&pageType=share&sourceType=3&shareTeamId=6w2v5pvxjb7jzx6vsyu5k1ny0zqadnog&shareOrgId=','_blank')">
+                    <img src="https://img.icons8.com/fluency/200/0066CC/book-shelf.png" class="app-icon">
+                    <div class="app-name">充放电集成专业知识库</div>
+                </div>
+
+                <div class="app-card" onclick="window.open('http://10.124.8.54:30009/agent/dialog/#/store/dialog/detail?id=xzrbgent2b13zjsucvk6vxzosgmtsoke&pageType=share&sourceType=3&shareTeamId=6w2v5pvxjb7jzx6vsyu5k1ny0zqadnog&shareOrgId=','_blank')">
+                    <img src="https://img.icons8.com/fluency/200/0066CC/bar-chart.png" class="app-icon">
+                    <div class="app-name">充放电体验标准数据分析报告助手</div>
+                </div>
+
+                <div class="app-card" onclick="window.open('http://10.124.8.54:30009/agent/dialog/#/store/dialog/detail?id=xzrbgent2bdsriaq5mp63to1lb882rix&pageType=share&sourceType=3&shareTeamId=6w2v5pvxjb7jzx6vsyu5k1ny0zqadnog&shareOrgId=','_blank')">
+                    <img src="https://img.icons8.com/fluency/200/0066CC/code.png" class="app-icon">
+                    <div class="app-name">AI报文分析助手</div>
+                </div>
+
+                <div class="app-card" onclick="window.open('http://10.124.8.54:30009/agent/scene/#/store/detail?id=xzrbcess3ju4jotyuuj1yxjko0p0zjz4&version=xzrvcess4qukhgrel85p1s3xdupeipbg&pageType=3&sourceType=3&shareTeamId=6w2v5pvxjb7jzx6vsyu5k1ny0zqadnog&shareOrgId=','_blank')">
+                    <!-- ✅ 修复：失效error-finding → 替换为【问题排查】可用图标 -->
+                    <img src="https://img.icons8.com/fluency/200/0066CC/code.png" class="app-icon">
+                    <div class="app-name">售后数据批量问题定位</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ✅ 第二区：数据分析报告专区 -->
+        <div class="function-section">
+            <div class="section-title"><i>📈</i> 数据分析报告专区</div>
+            <div class="card-wrapper">
+                
+                <div class="app-card" onclick="window.open('http://10.124.10.172/dash/share/195?id=1189&token=1764895522862bace69b42f5b5a868daa5112','_blank')">
+                    <img src="https://img.icons8.com/fluency/200/0066CC/pie-chart.png" class="app-icon">
+                    <div class="app-name">懂车帝数据分析报告</div>
+                </div>
+
+                <div class="app-card" onclick="window.open('http://10.124.10.172/dash/share/206?id=1589&token=176664342834900fcde9391303bdc3cdfa516','_blank')">
+                    <img src="https://img.icons8.com/fluency/200/0066CC/line-chart.png" class="app-icon">
+                    <div class="app-name">懂车帝数据分析报告--竞品车</div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- ✅ 第三区：工具软件下载专区 -->
+        <div class="function-section">
+            <div class="section-title"><i>🔧</i> 工具软件下载专区</div>
+            <div class="card-wrapper">
+                <div class="app-card" onclick="window.open('//10.4.9.25//Team//DELE2025_新能源系统开发室//03-充放电集成开发组//充放电主观体验及功能开发专业能力建设//1.充放电体验评价//工具//27930AnalyzerCore.exe', '_blank')">
+                    <!-- ✅ 修复：失效software → 替换为【应用程序】可用图标 -->
+                    <img src="https://img.icons8.com/color/200/0066CC/package.png" class="app-icon">
+                    <div class="app-name">报文解析助手</div>
+                </div>
+                <div class="app-card" onclick="window.open('//10.4.9.25//Team//DELE2025_新能源系统开发室//03-充放电集成开发组//充放电主观体验及功能开发专业能力建设//1.充放电体验评价//工具//标准v7.exe', '_blank')">
+                    <img src="https://img.icons8.com/color/200/0066CC/package.png" class="app-icon">
+                    <div class="app-name">主观体验助手</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
